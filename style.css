@@ -1,0 +1,139 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Weather App Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #87CEEB;
+    /* Sky Blue */
+    color: #333;
+}
+
+h1 {
+    background-color: #4682B4;
+    /* Steel Blue */
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.weather-input {
+    width: 80%;
+    text-align: center;
+}
+
+.weather-input input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.weather-input input:focus {
+    border: 2px solid #4682B4;
+}
+
+.weather-input .separator {
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.weather-input button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4682B4;
+    transition: background-color 0.2s ease;
+}
+
+.weather-input .search-btn:hover,
+.weather-input .location-btn:hover {
+    background-color: #36648B;
+    /* Steel Blue - Darker Shade */
+}
+
+.weather-input .location-btn {
+    background-color: #696969;
+    /* Dim Gray */
+}
+
+.weather-details {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.current-weather {
+    background-color: #708090;
+    /* Slate Gray */
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-weather h2,
+.weather-details h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.details,
+.icon {
+    flex: 1;
+}
+
+.weather-details h6 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.weather-cards {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #778899;
+    /* Light Slate Gray */
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    width: calc(100% / 5);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
